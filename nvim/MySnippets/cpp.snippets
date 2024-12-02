@@ -1,0 +1,39 @@
+global !p
+import re
+def coutn(snip,first):
+	placeholders_amount = int(snip.buffer[snip.line].strip())
+	snip.buffer[snip.line] = ''
+	myStr = "cout << "
+	for i in range(first, placeholders_amount):
+		myStr += "$" + str(i) + " <<"
+	myStr += " endl;$0"
+	snip.expand_anon(myStr)
+	return myStr
+
+def couta(snip):
+    words = snip.buffer[snip.line]
+    res = re.split(r':(?:\s*)(?=(?:[^(]*\([^)]*\))*[^():]*(?::|$))',words)
+    res = [str.strip() for str in res]
+    anon_snippet_body = "cout << " + " << ".join(res) + " << endl;$0"
+    snip.buffer[snip.line] = ""
+    snip.expand_anon(anon_snippet_body)
+
+endglobal
+
+snippet cout "cout" b
+cout << $1 << endl;$0
+endsnippet
+
+snippet "([^\s]*\w+)\.cout" "cout" r
+cout << `!p snip.rv = match.group(1)` << endl;$0
+endsnippet
+
+post_jump "coutn(snip,1)"
+snippet  "cout([0-9]+)" "snippet" br
+`!p snip.rv = match.group(1)`
+endsnippet
+
+post_jump "couta(snip)"
+snippet "cout:(.+)" "cout auto" br
+`!p snip.rv = match.group(1)`
+endsnippet

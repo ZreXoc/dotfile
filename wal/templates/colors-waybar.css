@@ -1,0 +1,15 @@
+/*@define-color critical ; [> critical color <]*/
+/*@define-color alert   ;*/
+/*@define-color warning ;  [> warning color <]*/
+@define-color fgcolor {foreground};  /* foreground color */
+@define-color bgcolor {background};  /* background color */
+
+@define-color accent1 {color0};
+@define-color accent2 {color1};
+@define-color accent3 {color2};
+@define-color accent4 {color3};
+@define-color accent5 {color4};
+@define-color accent6 {color5};
+@define-color accent13 {color13};
+@define-color accent14 {color14};
+@define-color accent14 {color15};

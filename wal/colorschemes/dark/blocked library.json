@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/xic/Pictures/bl.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010101",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#A11B32",
+        "color2": "#DB2437",
+        "color3": "#A06166",
+        "color4": "#CB4654",
+        "color5": "#B68878",
+        "color6": "#BD7786",
+        "color7": "#bfbfbf",
+        "color8": "#404040",
+        "color9": "#A11B32",
+        "color10": "#DB2437",
+        "color11": "#A06166",
+        "color12": "#CB4654",
+        "color13": "#B68878",
+        "color14": "#BD7786",
+        "color15": "#bfbfbf"
+    }
+}

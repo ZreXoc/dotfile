@@ -1,0 +1,28 @@
+{
+    "checksum": "12cf410228f5f271f003bc185ba5cec8",
+    "wallpaper": "/home/xic/Pictures/screenlock/1.jpg",
+    "alpha": "10",
+    "special": {
+        "background": "#f5f5f5",
+        "foreground": "#3d3d3d",
+        "cursor": "#3d3d3d"
+    },
+    "colors": {
+        "color0": "#f5f5f5",
+        "color1": "#838387",
+        "color2": "#8d8d91",
+        "color3": "#908f90",
+        "color4": "#9c9a9a",
+        "color5": "#a9a5a2",
+        "color6": "#ada8a5",
+        "color7": "#7a7a7a",
+        "color8": "#b7b7b7",
+        "color9": "#AFAFB4",
+        "color10": "#BCBCC2",
+        "color11": "#C1BFC0",
+        "color12": "#D0CECE",
+        "color13": "#abb9c0",
+        "color14": "#c7b7d4",
+        "color15": "#F4BFBD"
+    }
+}

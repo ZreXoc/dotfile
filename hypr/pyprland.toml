@@ -1,0 +1,30 @@
+[pyprland]
+plugins = ["workspaces_follow_focus","scratchpads","fetch_client_menu","shortcuts_menu","monitors","layout_center","shift_monitors"]
+
+[workspaces_follow_focus]
+max_workspaces = 5 # number of workspaces before cycling
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+size = "75% 60%"
+max_size = "1920px 100%"
+margin = 50
+multi=false
+
+[shortcuts_menu.entries]
+"monitors manage" = "wlrlui"
+"monitors swap" = "pypr shift_monitors +1"
+#[shortcuts_menu.entries.reload]
+"reload pypr" = "pypr reload"
+"reload gbar" = "pypr gbar restart"
+"reload waybar & rofi & swaync" = "sh $HOME/.config/hypr/scripts/Refresh.sh"
+"Hyprland logs" = 'kitty tail -f $XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/hyprland.log'
+[layout_center]
+margin = 60
+offset = [0, 0]
+next = "movefocus r"
+prev = "movefocus l"
+next2 = "movefocus d"
+prev2 = "movefocus u"
