@@ -33,6 +33,7 @@
   },
   "explorer.icon.enableNerdfont": true,
   "sumneko-lua.enableNvimLuaDev": true,
+  "Lua.workspace.checkThirdParty": false,
   "Lua.diagnostics.workspaceDelay": -1,
   "rust-analyzer.disableProgressNotifications": true,
   "git.enableGutters": true,

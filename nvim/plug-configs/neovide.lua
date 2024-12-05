@@ -2,7 +2,6 @@ if vim.g.neovide then
     --vim.cmd("colorscheme edge")
   --vim.o.guifont = "Cascadia Code,Source Han Sans CN:h14" -- text below applies for VimScript
     --vim.o.guifont = "Cascadia Code PL:h14" -- text below applies for VimScript
-    --你好
 
     --vim.opt.guifont = { "Fira Code:h15" }
   vim.g.neovide_remember_window_size = true
